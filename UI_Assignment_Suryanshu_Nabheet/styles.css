@@ -1,0 +1,371 @@
+:root {
+    --primary-color: #6366F1;
+    --secondary-color: #2DD4BF;
+    --background-color: #F8F9FB;
+    --card-background: #FFFFFF;
+    --text-color: #333333;
+    --text-muted: #6B7280;
+    --border-color: #E5E7EB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.navbar {
+    background-color: #2A2F3C;
+    color: #FFFFFF;
+    padding: 0.75rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.nav-links .active-link {
+    color: var(--secondary-color);
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 2rem;
+    height: 2rem;
+    background-color: #FF9F43;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--card-background);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.results-card {
+    grid-row: span 3;
+}
+
+.results-image {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.score-card, .top-score {
+    background-color: #F3F4F9;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+}
+
+.passed {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+.accuracy {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.total-score {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.top-score {
+    align-items: flex-start;
+}
+
+.top-score .avatar {
+    width: 3rem;
+    height: 3rem;
+}
+
+.score-info {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+.action-section {
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+.secondary {
+    background-color: #FFFFFF;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.subject-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    color: #FFFFFF;
+}
+
+.geography { background-color: #2DD4BF; }
+.politics { background-color: #FFB547; }
+.current-affairs { background-color: #4C9AFF; }
+.general-studies { background-color: #9BA1B3; }
+.mathematics { background-color: #2DD4BF; }
+.social-studies { background-color: #6366F1; }
+.english-literature { background-color: #FF5630; }
+.indian-history { background-color: #FF8F00; }
+.economics { background-color: #2DD4BF; }
+
+.response-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.percentage {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.time-increase {
+    color: #FF5630;
+    display: flex;
+    align-items: center;
+}
+
+.highlight-red {
+    color: #FF5630;
+}
+
+.approach-list {
+    list-style-type: none;
+}
+
+.approach-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.suggestion-levels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.level {
+    text-align: center;
+}
+
+.time {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.difficulty {
+    font-weight: 600;
+}
+
+.easy { color: var(--secondary-color); }
+.medium { color: #FFB547; }
+.hard { color: #FF5630; }
+
+.time-filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.time-filter {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #F3F4F9;
+    border-radius: 9999px;
+}
+
+.time-filter.active {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+}
+
+.time-chart {
+    margin-bottom: 1rem;
+}
+
+.time-scale {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.time-bar {
+    height: 0.5rem;
+    background-color: #F3F4F9;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.time-progress {
+    height: 100%;
+    background-color: #FF5630;
+}
+
+.time-progress.success {
+    background-color: var(--secondary-color);
+}
+
+.time-description {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #2A2F3C;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .analytics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firstbench Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#2DD4BF">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <span>Firstbench</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>Dashboard</a></li>
+                <li><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>FirstGuru</a></li>
+                <li><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>TownHall</a></li>
+                <li><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H6v-2h6v2zm4-4H6v-2h10v2zm0-4H6V7h10v2z"/></svg>AI Evaluation</a></li>
+                <li><a href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>Performance</a></li>
+                <li><a href="#" class="active-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg>Mock Test</a></li>
+            </ul>
+            <div class="user-actions">
+                <button class="icon-button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></button>
+                <div class="avatar">P</div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="dashboard-grid">
+            <div class="results-card">
+                <img src="https://via.placeholder.com/200" alt="Results illustration" class="results-image">
+                <h2>Your Result!</h2>
+                <p>All your insights & details in one place</p>
+                <div class="score-card">
+                    <div class="score-details">
+                        <span class="badge passed">YOU'VE PASSED!</span>
+                        <div class="score">
+                            <span class="current-score">136</span>
+                            <span class="total-score">/240</span>
+                        </div>
+                    </div>
+                    <span class="badge accuracy">76% ACCURACY</span>
+                </div>
+                <div class="top-score">
+                    <img src="https://via.placeholder.com/48" alt="Top scorer" class="avatar">
+                    <div class="score-info">
+                        <p>Top Score</p>
+                        <div class="score">
+                            <span class="current-score">230</span>
+                            <span class="total-score">/240</span>
+                        </div>
+                        <p>By Parth Akotkar</p>
+                    </div>
+                    <span class="badge accuracy">92% ACCURACY</span>
+                </div>
+                <div class="action-section">
+                    <h3>Improve your Marks</h3>
+                    <p>Improve your score by practicing more.</p>
+                    <button class="btn primary">Practice more</button>
+                </div>
+                <div class="action-section">
+                    <h3>Revisit Paper</h3>
+                    <p>Challenge your friends by simply sharing a link to this test</p>
+                    <button class="btn secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                        </svg>
+                        Visit
+                    </button>
+                    <p class="note">Instructions for how to upload your handwritten material is given</p>
+                </div>
+            </div>
+            <div class="analytics-grid">
+                <div class="card compare-accuracy">
+                    <h3>Compare Accuracy</h3>
+                </div>
+                <div class="card compare-accuracy">
+                    <h3>Compare Accuracy</h3>
+                </div>
+                <div class="card compare-accuracy">
+                    <h3>Compare Accuracy</h3>
+                </div>
+                <div class="card subject-understanding">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 7h3V5h2v5h3l-4 4-4-4z"/>
+                        </svg>
+                        Subject Understanding
+                    </h3>
+                    <div class="subject-tags">
+                        <span class="tag geography">Geography</span>
+                        <span class="tag politics">Politics</span>
+                        <span class="tag current-affairs">Current Affairs</span>
+                        <span class="tag general-studies">General Studies</span>
+                        <span class="tag mathematics">Mathematics</span>
+                        <span class="tag social-studies">Social Studies</span>
+                        <span class="tag english-literature">English Literature</span>
+                        <span class="tag indian-history">Indian History</span>
+                        <span class="tag economics">Economics</span>
+                    </div>
+                </div>
+                <div class="card response-time">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                        Response Time
+                    </h3>
+                    <div class="response-stats">
+                        <div class="percentage">60<span>%</span></div>
+                        <div class="time-increase">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7 14l5-5 5 5H7z"/>
+                            </svg>
+                            2min
+                        </div>
+                    </div>
+                    <p>You are <span class="highlight-red">slow</span>!</p>
+                </div>
+                <div class="card approach-data">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L11 13.17l5.59-5.58L18 9l-6 8z"/>
+                        </svg>
+                        Approach Data
+                    </h3>
+                    <ul class="approach-list">
+                        <li><span>Based on Facts</span><span class="percentage">25%</span></li>
+                        <li><span>Based on Analysis</span><span class="percentage">32%</span></li>
+                        <li><span>Based on Elimination</span><span class="percentage">19%</span></li>
+                        <li><span>Based on Guess</span><span class="percentage">24%</span></li>
+                    </ul>
+                </div>
+                <div class="card suggestions">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
+                        </svg>
+                        Suggestions
+                    </h3>
+                    <div class="suggestion-levels">
+                        <div class="level">
+                            <span class="time">0-1:12</span>
+                            <span class="difficulty easy">Easy</span>
+                        </div>
+                        <div class="level">
+                            <span class="time">0:12-3:32</span>
+                            <span class="difficulty medium">Medium</span>
+                        </div>
+                        <div class="level">
+                            <span class="time">0:32-40</span>
+                            <span class="difficulty hard">Hard</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card compare-accuracy-chart">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+                        </svg>
+                        Compare Accuracy
+                    </h3>
+                    <div class="time-filters">
+                        <span class="time-filter">10min</span>
+                        <span class="time-filter active">15min</span>
+                        <span class="time-filter">30min</span>
+                        <span class="time-filter">45min</span>
+                    </div>
+                    <canvas id="accuracyChart"></canvas>
+                </div>
+                <div class="card time-taken">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+                            <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                        Time Taken
+                    </h3>
+                    <div class="time-chart">
+                        <div class="time-scale">
+                            <span>10sec</span>
+                            <span>20</span>
+                            <span>30</span>
+                            <span>40</span>
+                            <span>50</span>
+                            <span>60</span>
+                            <span>70</span>
+                            <span>80</span>
+                            <span>90</span>
+                        </div>
+                        <div class="time-bar">
+                            <div class="time-progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <p class="time-description">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                    <div class="time-chart">
+                        <div class="time-scale">
+                            <span>4sec</span>
+                            <span>3</span>
+                            <span>2</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                        </div>
+                        <div class="time-bar">
+                            <div class="time-progress success" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <p class="time-description">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Made with ❤️ by Suryanshu Nabheet</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
