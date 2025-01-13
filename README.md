@@ -1,4 +1,4 @@
-# UI_Assignment_Suryanshu_Nabheet
+# Result_View_Suryanshu_Nabheet
 
 ## Project Overview
 
